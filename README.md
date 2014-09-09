@@ -8,6 +8,12 @@ This application has been built to store the same domain objects in one of a var
 
 The application use Spring Java configuration and [bean profiles](http://static.springsource.org/spring/docs/current/spring-framework-reference/html/new-in-3.1.html#new-in-3.1-bean-definition-profiles) to configure the application and the connection objects needed to use the persistence stores. It also uses the [Spring Cloud](https://github.com/spring-projects/spring-cloud) library to inspect the environment when running on Cloud Foundry. See the [Cloud Foundry documentation](http://docs.cloudfoundry.com/docs/using/services/spring-service-bindings.html) for details on configuring a Spring application for Cloud Foundry.
 
+## Running the application on Stackato
+
+~~~
+stackato push -n
+~~~
+
 ## Running the application locally
 
 One Spring bean profile should be activated to choose the database provider that the application should use. The profile is selected by setting the system property `spring.profiles.active` when starting the app.

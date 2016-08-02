@@ -4,6 +4,4 @@ applications:
   instances: 1
   memory: 512M
   path: build/libs/spring-music.war
-  services:
-  - mypostgresql
   stack: cflinuxfs2
